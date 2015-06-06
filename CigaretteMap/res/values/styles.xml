@@ -1,0 +1,88 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="@style/Theme.Sherlock"></style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.Tth</item>
+        <item name="actionBarItemBackground">@drawable/actionbutton_background</item>
+        <item name="actionModeBackground">@color/common_title_background</item>
+        <item name="actionModeSplitBackground">@color/common_title_background</item>
+        <item name="selectableItemBackground">@drawable/actionbutton_background</item>
+        <item name="actionButtonStyle">@style/ActionBar.Solid.Tth.Actionbutton</item>
+        <item name="actionOverflowButtonStyle">@style/ActionBar.Solid.Tth.Actionbutton.Overflow</item>
+        <item name="actionMenuTextColor">@color/common_right_text_menu_selector</item>
+        <item name="actionMenuTextAppearance">@style/ActionBar.Solid.Tth.MenuText</item>
+        <item name="popupMenuStyle">@style/Tth.PopupMenu</item>
+        <item name="textAppearanceLargePopupMenu">@style/Tth.PopupMenu.Large</item>
+        <item name="textAppearanceSmallPopupMenu">@style/Tth.PopupMenu.Small</item>
+    </style>
+
+    <style name="ActionBar.Solid.Tth" parent="@style/Widget.Sherlock.ActionBar">
+        <item name="android:background">@color/common_title_background</item>
+        <item name="android:backgroundStacked">@color/common_title_background</item>
+        <item name="android:backgroundSplit">@color/common_title_background</item>
+        <item name="android:titleTextStyle">@style/ActionBar.Solid.Tth.Title</item>
+        <item name="background">@color/common_title_background</item>
+        <item name="backgroundStacked">@color/common_title_background</item>
+        <item name="backgroundSplit">@color/common_title_background</item>
+        <item name="titleTextStyle">@style/ActionBar.Solid.Tth.Title</item>
+    </style>
+
+    <style name="ActionBar.Solid.Tth.Title" parent="@style/TextAppearance.Sherlock.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/common_title</item>
+        <item name="android:textSize">@dimen/common_text_size_36</item>
+    </style>
+
+    <style name="ActionBar.Solid.Tth.Actionbutton" parent="@style/Widget.Sherlock.ActionButton">
+        <item name="android:background">@drawable/actionbutton_background</item>
+        <item name="background">@drawable/actionbutton_background</item>
+        <item name="android:minWidth">48dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">0dip</item>
+        <item name="android:paddingRight">0dip</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <style name="ActionBar.Solid.Tth.Actionbutton.Overflow" parent="@style/Widget.Sherlock.ActionButton.Overflow">
+        <item name="android:background">@drawable/actionbutton_background</item>
+        <item name="background">@drawable/actionbutton_background</item>
+    </style>
+
+    <style name="ActionBar.Solid.Tth.MenuText">
+        <item name="android:textColor">@color/common_title</item>
+        <item name="android:textSize">@dimen/common_text_size_32</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Tth.PopupMenu" parent="@style/Widget.Sherlock.PopupMenu"></style>
+
+    <style name="Tth.PopupMenu.Large">
+        <item name="android:textSize">@dimen/common_text_size_28</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Tth.PopupMenu.Small">
+        <item name="android:textSize">@dimen/common_text_size_28</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="loadingdialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@color/transblack</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 模糊 -->
+
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+</resources>
